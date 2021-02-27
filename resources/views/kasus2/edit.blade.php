@@ -30,16 +30,16 @@
                         <input type="number" name="jumlah_positif"  value="{{$kasus2->jumlah_positif}}" class="form-control" id="">
                     </div>
                     <div class="mb-3">
+                        <label for="" class="form-label">Tanggal</label>
+                        <input type="date" name="tanggal"  value="{{$kasus2->tanggal}}" class="form-control" id="">
+                    </div>
+                    <div class="mb-3">
                         <label for="" class="form-label">Jumalah Meninggal</label>
                         <input type="number" name="jumlah_meninggal"  value="{{$kasus2->jumlah_meninggal}}" class="form-control" id="">
                     </div>
                     <div class="mb-3">
                         <label for="" class="form-label">Jumalah Sembuh</label>
                         <input type="number" name="jumlah_sembuh"  value="{{$kasus2->jumlah_sembuh}}" class="form-control" id="">
-                    </div>
-                    <div class="mb-3">
-                        <label for="" class="form-label">Tanggal</label>
-                        <input type="date" name="tanggal"  value="{{$kasus2->tanggal}}" class="form-control" id="">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>

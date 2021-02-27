@@ -23,12 +23,12 @@
                         <input type="text" name="jumlah_positif"  value="{{$kasus2->jumlah_positif}}" class="form-control" id="" readonly>
                     </div>
                     <div class="mb-3">
-                        <label for="" class="form-label">Jumlah Meninggal</label>
-                        <input type="text" name="jumlah_meninggal"  value="{{$kasus2->jumlah_meninggal}}" class="form-control" id="" readonly>
-                    </div>
-                    <div class="mb-3">
                         <label for="" class="form-label">Jumlah Sembuh</label>
                         <input type="text" name="jumlah_sembuh"  value="{{$kasus2->jumlah_sembuh}}" class="form-control" id="" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Jumlah Meninggal</label>
+                        <input type="text" name="jumlah_meninggal"  value="{{$kasus2->jumlah_meninggal}}" class="form-control" id="" readonly>
                     </div>
                     <div class="mb-3">
                         <label for="" class="form-label">Tanggal</label>

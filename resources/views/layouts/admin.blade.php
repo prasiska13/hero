@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="{{asset('assets/plugins/summernote/summernote-bs4.css')}}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  @livewireStyles
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
         <div class="wrapper">
@@ -96,6 +97,7 @@
 <script src="{{asset('assets/dist/js/pages/dashboard.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{asset('assets/dist/js/demo.js')}}"></script>
+@livewireScripts
 </body>
 </html>
 

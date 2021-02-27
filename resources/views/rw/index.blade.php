@@ -8,14 +8,14 @@
                 <div class="card-header"><center><b>{{ __('Data Rw') }}</b></center></div>
 
                 <div class="card-body">
-                <a href="{{route('rw.create')}}"class="btn btn-outline-success float-right"><b>Tambah Data</b></a>
+                <a href="{{route('rw.create')}}"class="btn btn-success float-right"><b>Tambah Data</b></a>
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
 
-                  <table class="table">
+                    <table class="table table-bordered">
                     <thead>
                       <tr>
                         <th scope="col">No</th>
@@ -36,7 +36,7 @@
                                 @method('DELETE')
                                 <td><a class="btn btn-primary btn-sm" href="{{route('rw.show', $data->id)}}">SHOW</a>|
                                 <a class="btn btn-warning btn-sm" href="{{route('rw.edit', $data->id)}}"> EDIT </a>|
-                                <button type="submit" class="btn btn-danger fa fa-trash-alt btn-sm" onclick="return confirm('Apakah anda yakin ?')"><a>DELETE</a></button>
+                                <button type="submit" class="btn btn-danger  btn-sm" onclick="return confirm('Apakah anda yakin ?')"><a>DELETE</a></button>
                         </td>
                       </tr>
                           </form>

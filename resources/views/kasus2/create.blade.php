@@ -10,20 +10,16 @@
                 <div class="card-body">
                 <form action="{{route('kasus2.store')}}" method="POST">
                 @csrf
+                <div class="col">
+                <livewire:kasus1>
+                </div>
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
             
-                <div class="mb-3">
-                        <label for="" class="form-label">Rw</label>
-                       <select name="id_rw" class="form-control" id="">
-                       @foreach($rw as $data)
-                       <option value="{{$data->id}}">{{$data->nama_rw}}</option>
-                       @endforeach
-                       </select>
-                    </div>
+               
                     <div class="mb-3">
                         <label for="" class="form-label">Jumlah Positif</label>
                         <input type="number" name="jumlah_positif" class="form-control" id="">
@@ -32,17 +28,17 @@
                         @endif
                     </div>
                     <div class="mb-3">
-                        <label for="" class="form-label">Jumlah Meninggal</label>
-                        <input type="number" name="jumlah_meninggal" class="form-control" id="">
-                        @if($errors->has('jumlah_meninggal'))
-                        <span class="text-danger">{{ $errors->first('jumlah_meninggal')}}</span>
-                        @endif
-                    </div>
-                    <div class="mb-3">
                         <label for="" class="form-label">Jumlah Sembuh</label>
                         <input type="number" name="jumlah_sembuh" class="form-control" id="">
                         @if($errors->has('jumlah_sembuh'))
                         <span class="text-danger">{{ $errors->first('jumlah_sembuh')}}</span>
+                        @endif
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Jumlah Meninggal</label>
+                        <input type="number" name="jumlah_meninggal" class="form-control" id="">
+                        @if($errors->has('jumlah_meninggal'))
+                        <span class="text-danger">{{ $errors->first('jumlah_meninggal')}}</span>
                         @endif
                     </div>
                     <div class="mb-3">

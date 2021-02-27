@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.welcome');
 });
 
 Auth::routes();
@@ -33,6 +33,9 @@ Route::get('kota',function(){
 });
 Route::get('kecamatan',function(){
     return view('kecamatan.index');
+});
+Route::get('provinsi',function(){
+    return view('provinsi.index');
 });
 
 // PROVINSI
@@ -53,3 +56,6 @@ Route::resource('rw',RwController::class);
 // KASUS2
 use App\Http\Controllers\Kasus2Controller;
 Route::resource('kasus2',Kasus2Controller::class);
+//FRONTEND
+use App\Http\Controllers\WelcomeController;
+Route::resource('/',WelcomeController::class);

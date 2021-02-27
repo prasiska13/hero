@@ -20,7 +20,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="" class="form-label">Rw</label>
-                        <input type="text" name="nama"  value="{{$rw->nama}}" class="form-control" id="" readonly>
+                        <input type="text" name="nama_rw"  value="{{$rw->nama_rw}}" class="form-control" id="" readonly>
                     </div>
                     <a href="{{url()->previous()}}" type="submit" class="btn btn-primary">Kembali</a href="{{url()->previous()}}">
                 </div>

@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 use App\Http\Controller\DB;
+use App\Models\provinsi;
+use App\Models\kota;
+use App\Models\kecamatan;
+use App\Models\kelurahan;
 use App\Models\rw;
 use App\Models\kasus2;
 use Illuminate\Http\Request;
